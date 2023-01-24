@@ -1,0 +1,565 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+
+}
+
+#main {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+#main::-webkit-scrollbar{
+    display: none;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    width: 100%;
+    padding: 34px;
+    position: fixed;
+}
+
+#part1 {
+    position: absolute;
+    left: 10%;
+    top: 18%;
+}
+
+#part1>h3 {
+    font-family: voyage;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+
+#part2 {
+    position: absolute;
+    left: 40%;
+    top: 30%;
+}
+
+#part2>input {
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 8px;
+    width: 280px;
+    padding: 0px 24px;
+    background-color: rgba(232, 227, 227, 0.906);
+    border: none;
+    color: rgb(82, 80, 80);
+    font-size: 15px;
+    font-weight: 100;
+}
+
+#part3 {
+    position: absolute;
+    left: 70%;
+    top: 30%;
+    display: flex;
+    cursor: pointer;
+}
+#part3>h3:hover{
+    color: rgb(117, 114, 114);
+}
+
+#part3 h3 {
+    margin-right: 20px;
+    font-size: 24px;
+    font-weight: 100;
+    cursor: pointer;
+}
+#navimg{
+    
+        height: 40px;
+        position: relative;
+        width: 40px;
+        border-radius: 50%;
+        position: absolute;
+        top: -20%;
+        left: 94.8%;
+        padding: 2px;
+        border: 1px solid rgb(223, 220, 220);
+    object-fit: cover;
+    object-position: center;
+    
+    }
+    
+    #navimg>img {
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+        
+        object-fit: cover;
+        object-position: center;
+        cursor: pointer;
+        padding: 2px;
+    
+    }
+
+
+
+.v1 {
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 100%;
+}
+
+#v2 {
+    position: absolute;
+    top: 94%;
+    left: 0%;
+    width: 100%;
+    border: 1px solid rgba(151, 150, 150, 0.728);
+
+}
+
+#insta-part1 {
+    height: calc(100% -70px);
+    width: 60%;
+    background-color: #fff;
+    margin-top: 85px;
+    margin-left: 90px;
+    /* overflow-y: auto; */
+    overflow-y: hidden;
+}
+
+#stories {
+    height: 100px;
+    width: 100%;
+    border: 1px solid rgba(151, 150, 150, 0.728);
+    overflow-y: hidden;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+#stories::-webkit-scrollbar {
+    display: none;
+}
+
+#story {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin: 8px;
+    padding: 2px;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #ea3879 #e43978 #ce7954 #f38454;
+
+
+}
+
+#story>img {
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+}
+
+#fullpreview {
+
+    height: 535px;
+    width: 320px;
+    position: absolute;
+    background-color: #fff;
+    top: 12%;
+    left: 40%;
+    z-index: 1;
+    border-radius: 8px;
+    z-index: 9999;
+    display: none;
+
+    object-fit: cover;
+    object-position: center;
+    background-position: center;
+    background-size: cover;
+
+}
+
+#growth {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid rgb(223, 220, 220);
+    position: absolute;
+    top: 1%;
+    background-color: bisque;
+}
+
+#cross {
+    position: absolute;
+    left: 85%;
+    top: 2%;
+    font-size: 40px;
+    font-weight: 200;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#posts {
+    height: 650px;
+    width: 60%;
+    position: absolute;
+    top: 35%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border: 1px solid rgb(223, 220, 220);
+    background-color: #fff;
+opacity: 1;
+}
+
+#posts::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+.profile {
+    height: 60px;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+
+.username {
+
+    font-family: gilroy;
+    font-size: 22px;
+    font-weight: 500;
+    margin-left: -495px;
+    margin-top: -1px;
+    cursor: pointer;
+
+}
+
+.ri-more-line {
+
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#dp {
+    height: 50px;
+    position: relative;
+    width: 50px;
+    border-radius: 50%;
+    padding: 2px;
+    margin-top: -16px;
+
+    border-width: 2px;
+    border-style: solid;
+    border-color: #ea3879 #e43978 #ce7954 #f38454;
+
+
+}
+
+#dp>img {
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+
+}
+
+.post {
+    height: 400px;
+    width: 100%;
+    margin-top: 8px;
+    overflow: hidden;
+}
+
+.post>img {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+.reaction {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
+}
+
+#react1 {
+    display: flex;
+    padding: 10px;
+}
+
+#react1>h3 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+#react1>h3:hover {
+    color: rgba(96, 94, 94, 0.797);
+}
+
+
+#react2>h3 {
+    margin-right: 24px;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: 400;
+
+}
+
+#react2>h3:hover {
+    color: rgba(96, 94, 94, 0.797);
+
+}
+
+#instapart2 {
+    height: 500px;
+    width: 400px;
+    position: absolute;
+    left: 68%;
+    top: 14%;
+    opacity: 1;
+}
+
+#dp2 {
+    height: 70px;
+    position: relative;
+    width: 70px;
+    border-radius: 50%;
+    padding: 2px;
+    margin-top: 25px;
+    margin-left: 25px;
+    border: 1px solid rgb(223, 220, 220);
+
+
+}
+
+#dp2>img {
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+
+}
+
+#upperpart>h3 {
+    font-family: gilroy;
+    font-size: 15px;
+    font-weight: 600;
+    position: absolute;
+    top: 7%;
+    left: 28%;
+
+}
+
+#upperpart>h4 {
+    font-family: gilroy;
+    font-size: 15px;
+    font-weight: 500;
+    position: absolute;
+    top: 12%;
+    left: 28%;
+    color: rgb(101, 101, 101);
+
+}
+
+#upperpart>h5 {
+    font-family: gilroy;
+    font-size: 15px;
+    font-weight: 600;
+    position: absolute;
+    top: 8%;
+    left: 78%;
+    color: rgb(71, 141, 245);
+    cursor: pointer;
+}
+
+#upperpart>h6 {
+    font-family: gilroy;
+    font-size: 20px;
+    font-weight: 600;
+    position: absolute;
+    top: 24%;
+    left: 8%;
+    color: rgb(122, 121, 121);
+
+}
+
+#upperpart>h2 {
+    font-family: gilroy;
+    font-size: 16px;
+    font-weight: 500;
+    position: absolute;
+    top: 24%;
+    left: 78%;
+    cursor: pointer;
+}
+
+
+#dp3 {
+    height: 50px;
+    position: relative;
+    width: 50px;
+    border-radius: 50%;
+    padding: 2px;
+    margin-top: 65px;
+    margin-left: 25px;
+    border: 1px solid rgb(223, 220, 220);
+
+
+}
+
+#dp3>img {
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+
+}
+
+#lowerpart1>h3 {
+    font-family: gilroy;
+    font-size: 15px;
+    font-weight: 600;
+   margin-left: 100px;
+   margin-top: -30px;
+
+}
+#lowerpart1>h5 {
+    font-family: gilroy;
+    font-size: 15px;
+    font-weight: 600;
+    position: absolute;
+    top: 36%;
+    left: 78%;
+    color: rgb(71, 141, 245);
+    cursor: pointer;
+}
+
+#dp4 {
+    height: 50px;
+    position: relative;
+    width: 50px;
+    border-radius: 50%;
+    padding: 2px;
+    margin-top: 25px;
+    margin-left: 25px;
+    border: 1px solid rgb(223, 220, 220);
+
+
+}
+
+#dp4>img {
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+
+}
+
+#lowerpart2>h3 {
+    font-family: gilroy;
+    font-size: 15px;
+    font-weight: 600;
+   margin-left: 100px;
+   margin-top: -30px;
+
+}
+#lowerpart2>h5 {
+    font-family: gilroy;
+    font-size: 15px;
+    font-weight: 600;
+    position: absolute;
+    top: 48%;
+    left: 78%;
+    color: rgb(71, 141, 245);
+    cursor: pointer;
+}
+
+#dp5 {
+    height: 50px;
+    position: relative;
+    width: 50px;
+    border-radius: 50%;
+    padding: 2px;
+    margin-top: 25px;
+    margin-left: 25px;
+    border: 1px solid rgb(223, 220, 220);
+
+
+}
+
+#dp5>img {
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+
+}
+
+#lowerpart3>h3 {
+    font-family: gilroy;
+    font-size: 15px;
+    font-weight: 600;
+   margin-left: 100px;
+   margin-top: -30px;
+
+}
+#lowerpart3>h5 {
+    font-family: gilroy;
+    font-size: 15px;
+    font-weight: 600;
+    position: absolute;
+    top: 62%;
+    left: 78%;
+    color: rgb(71, 141, 245);
+    cursor: pointer;
+}
